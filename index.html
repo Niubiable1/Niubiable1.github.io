@@ -1,266 +1,176 @@
 <!DOCTYPE html>
-<html>
-<!-- https://replit.com/@mrvsurya/HTML-CSS-Intro -->
+<html lang="en">
 <head>
-<meta charset="utf-8">
-<title>My Portfolio</title>
-<link rel="stylesheet" type="text/css" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jia Jiaxuan</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        
+        body {
+            text-align: center;
+            background-color: orange
+          }
+        
+        .container {
+            text-align: center
+        }
 
+        .italic-heading {
+            font-style: italic
+        }
 
+        .cyan {
+            font-size: 40px;
+            color: cyan
+        }
+
+        .header {
+            font-size: 18px;
+            color: red
+        }
+
+        .desc {
+            font-size: 16px;
+        }
+
+        .skills {
+            font-size: 19px;
+            font-align: center
+        }
+            
+    </style>
 </head>
-
 <body>
-<header>
-    <ul id="menu" class="shadow" style="">
-        <li>
-            <a href="#about" class="navlink">About</a>
-        </li>
-        <li>
-            <a href="#experience" class="navlink">Experience</a>
-        </li>
-        <li>
-            <a href="#education" class="navlink">Education</a>
-        </li>
-        <li>
-            <a href="#projects" class="navlink">Projects</a>
-        </li>
-        <li>
-            <a href="#skills" class="navlink">Skills</a>
-        </li>
-        <li>
-            <a href="#contact" class="navlink">Contact</a>
-        </li>
-    </ul>
-</header>
-<!-- End header -->
 
-<div id="lead">
-    <div id="lead-content">
-        <h1>Ryan Fitzgerald</h1>
-        <h2 class>Software Engineer</h2>
-        <a href="#" class="btn-rounded-white">Download Resume</a>
-        <a href="#education"> Jump to Education</a>
-    </div>
-    <!-- End #lead-content -->
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <ul>
+                
+                | <a href="#about" class="header">About</a> |
+                
+                <a href="#skills" class="header">Skills</a> |
+                
+                <a href="#education" class="header">Education</a> |
+                
+                <a href="#experience" class="header">Experience</a> |
+                
+                <a href="#projects" class="header">Projects</a> |
+                
+                <a href="#contact" class="header">Contact</a> |
+                
+            </ul>
+        </nav>
+    </header>
 
-    <div id="lead-overlay"></div>
-
-    <div id="lead-down">
-        <span>
-            <i class="fa fa-chevron-down" aria-hidden="true"></i>
-        </span>
-    </div>
-    <!-- End #lead-down -->
-</div>
-<!-- End #lead -->
-
-<div id="about">
-    <div class="container">
-        <div class="row">
-            <div>
-                <h2>About Me</h2>
-            </div>
-            <div>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat. Donec
-                    eu vehicula neque. Donec viverra lorem nunc, tempus euismod eros sollicitudin ut. Quisque et tincidunt libero. Donec id pharetra justo. Proin euismod lacinia dolor, eu scelerisque justo tempus pharetra. Vivamus nunc justo, finibus
-                    ut nisl sed, euismod rhoncus nulla. Proin sed magna egestas, egestas ante et, congue eros. In consequat, mauris dapibus tincidunt suscipit, ex libero aliquet diam, at maximus risus enim non leo.
-                </p>
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="italic-heading">About Me:</h2>
+            <h1 class="italic-heading cyan"> Hi! I am Jia Jiaxuan</h1>
+            <div class="profile">
+                
+                <img src="/images/profilepic.jpg" alt="Profile Picture" style="width:256px;height:256px;">
+                <p class="desc">I am a student currently studying in Nanyang Junior College Singapore. I have multiple years of learning experience about computing and diverse hobby and other interests. I started multiple projects with python in the past and managed to put some of my computing knowledge learnt into use. </p>
             </div>
         </div>
-    </div>
-</div>
-<!-- End #about -->
+    </section>
 
-<div id="experience" class="background-alt">
-    <h2 class="heading">Experience</h2>
-    <div id="experience-timeline">
-        <div data-date="September 2015 – September 2016">
-            <h3>Employer Name</h3>
-            <h4 class="job-title">Job Title</h4>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
-            </p>
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="container">
+            <h2>Skills</h2>
+            <ul class="skills-list">
+                <p class="skills">CSS3</p>
+                <p class="skills">HTML</p>
+                <p class="skills">Python</p>
+            </ul>
         </div>
+    </section>
 
-        <div data-date="September 2015 – September 2016">
-            <h3>Employer Name</h3>
-            <h4 class="job-title">Job Title</h4>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
-            </p>
-        </div>
-
-        <div data-date="September 2015 – September 2016">
-            <h3>Employer Name</h3>
-            <h4 class="job-title">Job Title</h4>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
-            </p>
-        </div>
-    </div>
-</div>
-<!-- End #experience -->
-
-<div id="education">
-    <h2 class="heading">Education</h2>
-    <div class="education-block">
-        <h3>University of Ottawa</h3>
-        <span class="education-date">Sept 2016 - Sept 2017</span>
-        <h4>Bachelor of Science in Computer Science</h4>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
-        </p>
-    </div>
-    <!-- End .education-block -->
-
-    <div class="education-block">
-        <h3>University of Ottawa</h3>
-        <span class="education-date">Sept 2016 - Sept 2017</span>
-        <h4>Bachelor of Science in Computer Science</h4>
-        <ul>
-            <li>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            </li>
-            <li>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            </li>
-            <li>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            </li>
-        </ul>
-    </div>
-    <!-- End .education-block -->
-</div>
-<!-- End #education -->
-
-<div id="projects" class="background-alt">
-    <h2 class="heading">Projects</h2>
-    <div class="container">
-        <div class="row">
-            <div class="project shadow-large">
-                <div class="project-image">
-                    <img src="images/project.png" />
-                </div>
-                <!-- End .project-image -->
-                <div class="project-info">
-                    <h3>Project Name Here</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
-                    </p>
-                    <a href="#">View Project</a>
-                </div>
-                <!-- End .project-info -->
-            </div>
-            <!-- End .project -->
-
-            <div class="project shadow-large">
-
-                <!-- End .project-image -->
-                <div class="project-info">
-                    <h3>Project Name Here</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
-                    </p>
-                    <a href="#">View Project</a>
-                </div>
-                <!-- End .project-info -->
-            </div>
-            <!-- End .project -->
-        </div>
-    </div>
-</div>
-<!-- End #projects -->
-
-<div id="skills">
-    <h2 class="heading">Skills</h2>
-    <ul>
-        <li>JavaScript</li>
-        <li>Python</li>
-        <li>Ruby</li>
-        <li>Go</li>
-        <li>Node.js</li>
-        <li>AngularJs</li>
-        <li>React</li>
-        <li>Elixir</li>
-        <li>Java</li>
-        <li>C</li>
-        <li>C#</li>
-        <li>C++</li>
-        <li>Ruby on Rails</li>
-        <li>JavaScript</li>
-        <li>Python</li>
-        <li>Ruby</li>
-        <li>Go</li>
-        <li>Node.js</li>
-        <li>AngularJs</li>
-        <li>React</li>
-        <li>Elixir</li>
-        <li>Java</li>
-        <li>C</li>
-        <li>C#</li>
-        <li>C++</li>
-        <li>Ruby on Rails</li>
-    </ul>
-</div>
-<!-- End #skills -->
-
-<div id="contact">
-    <h2>Get in Touch</h2>
-    <div id="contact-form">
-        <form method="POST" action="https://formspree.io/email@email.com">
-            <input type="hidden" name="_subject" value="Contact request from personal website" />
-            <input type="email" name="_replyto" placeholder="Your email" required>
-            <textarea name="message" placeholder="Your message" required></textarea>
-            <button type="submit">Send</button>
-        </form>
-    </div>
-    <!-- End #contact-form -->
-</div>
-<!-- End #contact -->
-
-<footer>
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-5 copyright">
-                <p>
-                    Copyright &copy; 2023 YOUR NAME
-                </p>
-            </div>
-            <div class="col-sm-2 top">
-                <span id="to-top">
-                    <i class="fa fa-chevron-up" aria-hidden="true"></i>
-                </span>
-            </div>
-            <div class="col-sm-5 social">
-                <ul>
-                    <li>
-                        <a href="https://github.com/" target="_blank"><i class="fa fa-github" aria-hidden="true">GitHub</i></a>
-                    </li>
-                    <li>
-                        <a href="https://stackoverflow.com/" target="_blank"><i class="fa fa-stack-overflow" aria-hidden="true">Stack Overflow</i></a>
-                    </li>
-                    <li>
-                        <a href="https://linkedin.com/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true">Linked-In</i></a>
-                    </li>
-                    <li>
-                        <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook" aria-hidden="true">Facebook</i></a>
-                    </li>
-                    <li>
-                        <a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter" aria-hidden="true">Twitter</i></a>
-                    </li>
-                    <li>
-                        <a href="https://plus.google.com/" target="_blank"><i class="fa fa-google-plus" aria-hidden="true">Google Plus</i></a>
-                    </li>
-                </ul>
+    <!-- Education Section -->
+    <section id="education" class="section">
+        <div class="container">
+            <h2>Education</h2>
+            
+            <div class="education-entry">
+                <h3>Primary Education</h3>
+                <p>Studied under multiple backgrounds, in both Singapore and China.</p>
+                <p>Year of Graduation: 2019</p>
+                <p>School of Graduation: Townsville Primary School</p>
+                <p>PSLE Results: 241</p>
+                
+                <h3>Secondary Education</h3>
+                <p>Studied in Chung Cheng High School (Yishun), managed to start my computing journey there.</p>
+                <p>Year of Graduation: 2022</p>
+                <p>School of Graduation: Chung Cheng High School (Yishun)</p>
+                <p>O Levels Results: Net 3</p>
+                <h3>Pre-University Education</h3>
+                <p>Got in to Nanyang Junior College in 2023 through Joint Admission Exercise (JAE), still an active student under NYJC
+                <p>Year of Graduation: 2024</p>
+                <p>School of Graduation: Nanyang Junior College</p>
+                <p>A Level Results: Will be released in 2025</p>
+                
             </div>
         </div>
-    </div>
-</footer>
-<!-- End footer -->
+    </section>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script src="js/scripts.min.js"></script>
+    <!-- Experience Section -->
+    <section id="experience" class="section">
+        <div class="container">
+            <h2>Experience</h2>
+            <div class="experience-entry">
+                <h3>So far no experience yet, but will have in the future</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project-entry">
+                <h3>Growtopia ToolBox</h3>
+                <p>Description: Written in python with the pyautogui, a cross-platform GUI automation Python module, the Growtopia ToolBox includes multiple features that allow you to play the game while freeing your hands. </p>
+                <p>Tools/Technologies Used: Python, pyautogui</p>
+            </div>
+            
+            <div class="project-entry">
+                <h3>Text-based MUD</h3>
+                <p>Description: A group project on a text-based multi-user dungeon game created by me and my group, CCHY+1. It made use of the theme of Valorant allowing user to experience the fun of a First Person Shooting (FPS) with simply line of texts. </p>
+                
+                <img src="/images/summaryproj.jpg" alt="Profile Picture" style="width:650px;height:512px;">
+                
+                <p>Tools/Technologies Used: Python</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Feel free to drop ay messages!</h2>
+            <div class="contact-form">
+                <form action="#" method="post">
+                    <label for="name">Name:</label><br>
+                    <input type="text" id="name" name="name" required><br>
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" required><br>
+                    <label for="message">Message:</label><br>
+                    <textarea id="message" name="message" required></textarea><br>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Jia Jiaxuan's Portfolio. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
-
 </html>
